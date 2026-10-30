@@ -1,47 +1,31 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
-.venv/
-backend/.venv/
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-# Environment variables
+# Environment files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
+
+# Dependencies
+node_modules
+.venv
+venv
 
 # Next.js
-frontend/.next/
-frontend/out/
+.next/
+out/
+dist/
+build/
 
-# Testing
-coverage/
-.nyc_output/
+# Python cache
+__pycache__/
+*.py[cod]
 .pytest_cache/
 
-# Databases
+# Database
+*.db
 *.sqlite
 *.sqlite3
-*.db
-studentos.db
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.log
-
-# OS
+# System files
 .DS_Store
-*.pem
 
-# IDEs
-.idea/
-.vscode/
-*.swp
+# TypeScript cache
+*.tsbuildinfo
