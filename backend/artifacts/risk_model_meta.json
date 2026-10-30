@@ -1,0 +1,64 @@
+{
+  "model_name": "GradientBoostingClassifier",
+  "version": "v1.0",
+  "training_samples": 2000,
+  "test_samples": 500,
+  "features": [
+    "previous_cgpa",
+    "cgpa_trend",
+    "internal_assessment_avg",
+    "attendance_percentage",
+    "assignment_completion_rate",
+    "daily_study_hours",
+    "study_consistency",
+    "backlog_count",
+    "coding_practice_hours_per_week",
+    "average_focus_rating"
+  ],
+  "target": "target_academic_risk",
+  "all_candidate_metrics": {
+    "LogisticRegression": {
+      "Accuracy": 0.924,
+      "Precision": 0.8273,
+      "Recall": 0.8273,
+      "F1": 0.8273,
+      "ROC_AUC": 0.9729
+    },
+    "RandomForestClassifier": {
+      "Accuracy": 0.932,
+      "Precision": 0.8878,
+      "Recall": 0.7909,
+      "F1": 0.8365,
+      "ROC_AUC": 0.9758
+    },
+    "GradientBoostingClassifier": {
+      "Accuracy": 0.938,
+      "Precision": 0.8762,
+      "Recall": 0.8364,
+      "F1": 0.8558,
+      "ROC_AUC": 0.9788
+    }
+  },
+  "best_metrics": {
+    "Accuracy": 0.938,
+    "Precision": 0.8762,
+    "Recall": 0.8364,
+    "F1": 0.8558,
+    "ROC_AUC": 0.9788
+  },
+  "feature_importances": {
+    "previous_cgpa": 0.5164,
+    "cgpa_trend": 0.0056,
+    "internal_assessment_avg": 0.1673,
+    "attendance_percentage": 0.1033,
+    "assignment_completion_rate": 0.0547,
+    "daily_study_hours": 0.0042,
+    "study_consistency": 0.081,
+    "backlog_count": 0.0577,
+    "coding_practice_hours_per_week": 0.0063,
+    "average_focus_rating": 0.0035
+  },
+  "is_synthetic": true,
+  "trained_at": "2026-10-29T23:59:49.915085",
+  "disclaimer": "Academic risk classification based on synthetic baseline data. Results are supportive indicators, not deterministic student labels."
+}
